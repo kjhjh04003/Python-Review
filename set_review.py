@@ -3,9 +3,9 @@ evens = {0, 2, 4, 6, 8} # 짝수 집합
 odds = {1, 3, 5, 7, 9} # 홀수 집합
 mthree = {0, 3, 6, 9} # 3의 배수 집합
 
-""" set 정의 연습
-set() 함수 """
 def define_set():
+    """ set 정의 연습
+    set() 함수 """
     empty = set() # 빈 집합 생성
     print(empty, type(empty))
     empty = {} # 빈set가 아니라 빈 dict
@@ -28,8 +28,8 @@ def define_set():
     words = set(lst)
     print(words, len(words), type(words))
 
-""" set 메서드 """
 def set_methods():
+    """ set 메서드 """
     print("전체 집합 : ", numbers)
 
     # 요소 추가
@@ -52,10 +52,10 @@ def set_methods():
     evens.update({2, 4, 6})
     print(evens)
 
-""" 집합 연산
-교집합, 합집합, 차집합 / 판별 연산 / 모집합 여부, 부분집합 여부
-"""
 def set_oper():
+    """ 집합 연산
+    교집합, 합집합, 차집합 / 판별 연산 / 모집합 여부, 부분집합 여부
+    """
     # 짝수 합집합 홀수 == 전체
     print("짝수 합집합 홀수 : ", evens.union(odds) == numbers)
     print("짝수 합집합 홀수 : ", evens | odds == numbers)
@@ -72,8 +72,8 @@ def set_oper():
     print("전체 차집합 짝수 : ", numbers.difference(evens))
     print("전체 차집합 짝수가 홀수?", numbers-evens == odds)
 
-""" 세트 순회(반복) """
 def loop():
+    """ 세트 순회(반복) """
     # 전체 집합을 대상으로
     for item in numbers:
         print(item, end=" ")
