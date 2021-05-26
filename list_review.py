@@ -1,5 +1,5 @@
-""" 리스트정의 연습 """
 def define_list():
+    """ 리스트정의 연습 """
     lst1 = list() # 빈 리스트
     print(lst1, type(lst1))
     lst2 = []
@@ -8,10 +8,10 @@ def define_list():
     lst4 = list("Python") # 다른 시퀀스 객체를 리스트로 반환
     print(lst4, type(lst4))
 
-""" 리스트 연산 
-순차형의 모든 기능을 수행
-immutable -> 내부 데이터 변경 가능 """
 def list_oper():
+    """ 리스트 연산
+    순차형의 모든 기능을 수행
+    immutable -> 내부 데이터 변경 가능 """
     lst = [1, 2, "Python"]
 
     # 길이 확인
@@ -106,8 +106,8 @@ def list_oper():
     print("MAX : ", max(lst))
     print("AVG : ", sum(lst)/len(lst)) # 평균 함수는 없다.
 
-""" 리스트 메서드 """
 def list_methods():
+    """ 리스트 메서드 """
     lst = [10, 2, 22, 9, 8, 33, 4, 12]
     print("원본 : ", lst)
 
@@ -151,10 +151,10 @@ def list_methods():
     copy.sort(key=key_func, reverse=True)
     print(copy)
 
-""" 리스트를 이용한 스택 구현
-append, pop 메서드를 이용
-Last in First out """
 def stack_ex():
+    """ 리스트를 이용한 스택 구현
+    append, pop 메서드를 이용
+    Last in First out """
     stack = []
 
     # 입력
@@ -174,10 +174,10 @@ def stack_ex():
     else:
         print("스택이 비었습니다.")
 
-""" 리스트를 이용한 큐의 구현
-append, pop을 이용
-First in First out """
 def queue_ex():
+    """ 리스트를 이용한 큐의 구현
+    append, pop을 이용
+    First in First out """
     queue = []
 
     # 입력
@@ -197,8 +197,8 @@ def queue_ex():
     else:
         print("큐가 비었습니다.")
 
-"""  리스트 순회(반복) """
 def loop():
+    """  리스트 순회(반복) """
     words = "Life is to short, you need Python".replace(",","").upper().split()
     print(words)
 
